@@ -6,7 +6,7 @@ RUN apt-get update && apt-get upgrade -y
 ENV TZ Asia/Tokyo
 
 # libraries
-RUN go get github.com/kkdai/youtube/v2
+RUN GO111MODULE=on go get github.com/kkdai/youtube/v2
 
 # cleanup
 RUN rm -rf /var/lib/apt/lists/*

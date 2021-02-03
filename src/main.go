@@ -1,4 +1,4 @@
-package youtube_test
+package main
 
 import (
 	"io"
@@ -7,7 +7,7 @@ import (
 	"github.com/kkdai/youtube/v2"
 )
 
-// ExampleDownload : Example code for how to use this package for download video.
+// ExampleClient : Example code for how to use this package for download video.
 func ExampleClient() {
 	videoID := "BaW_jenozKc"
 	client := youtube.Client{}
@@ -33,4 +33,8 @@ func ExampleClient() {
 	if err != nil {
 		panic(err)
 	}
+}
+
+func main() {
+	ExampleClient()
 }
